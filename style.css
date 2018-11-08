@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background: #24292e;
+  width: 100%;
+  height: 80px;
+  position: relative;
+}
+
+.inner-container {
+  max-width: 76%;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  padding-bottom: 16px;
+  padding-top: 16px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.desktop-li {
+  display: inline-block;
+  padding: 14px;
+}
+
+.logo {
+  margin: 0;
+  padding: 0;
+}
+
+.logo img {
+  position: relative;
+  top: 0px;
+  height: 42px;
+}
+
+.or {
+  color: #586069;
+}
+
+.search {
+  background-color: hsla(0, 0%, 100%, 0.125);
+  height: 32px;
+  border-radius: 3px;
+  border: none;
+  width: 340px;
+  position: relative;
+  top: -4px;
+  color: #fff;
+  padding-left: 8px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.search-outer {
+  position: relative;
+}
+
+.search-hint {
+  position: absolute;
+  right: 9px;
+  top: 0px;
+  height: 23px;
+}
+
+.search:focus {
+  background: #fff;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.1rem;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+/* mobile style */
+.mobile-logo img {
+  height: 45px;
+  float: left;
+}
+
+.svg-button {
+  float: right;
+  background: none;
+  border: none;
+  fill: #fff;
+  padding-top: 8px;
+  outline: none;
+}
+
+.drop-down-mobile {
+  background: #24292e;
+  overflow: hidden;
+  transition: height 1s;
+}
+
+.mobile-li {
+  display: block;
+  padding: 15px;
+  border-top: 1px solid #444d56;
+}
+
+.mobile-ul {
+  padding: 0 40px;
+}
+
+.search-mobile {
+  width: 100%;
+}
+
+.search-outer-mobile {
+  margin-top: 6px;
+}
+
+@media (max-width: 1446px) {
+  .inner-container {
+    max-width: 92%;
+  }
+  .desktop-li {
+    padding: 8px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .mobile {
+    visibility: hidden;
+  }
+  .drop-down-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  .desktop {
+    display: none;
+  }
+  .search-hint {
+    right: -1px;
+  }
+}
+
+@media (max-width: 450px) {
+  .mobile-ul {
+    padding: 0 6px;
+  }
+}
