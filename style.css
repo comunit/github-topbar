@@ -105,6 +105,7 @@ a {
 }
 
 .drop-down-mobile {
+  height: 0;
   background: #24292e;
   overflow: hidden;
   transition: height 1s;

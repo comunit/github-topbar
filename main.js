@@ -21,11 +21,11 @@ for (let i = 0; i < input.length; i++) {
 button[0].addEventListener("click", () => {
   if (isOpen === false) {
     // mobile[0].classList.remove("hide-lg");
-    mobile[0].style.height = "0";
+    mobile[0].style.height = "400px";
     isOpen = true;
   } else {
     // mobile[0].classList.add("hide-lg");
-    mobile[0].style.height = "400px";
+    mobile[0].style.height = "0";
     isOpen = false;
   }
 });
